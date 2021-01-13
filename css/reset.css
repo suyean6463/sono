@@ -1,0 +1,7 @@
+*{margin: 0; padding: 0; box-sizing: border-box; border-collapse: collapse;}
+ul,ol,li{list-style: none;}
+a{text-decoration: none; color: black;}
+img{border: 0; vertical-align: top;}
+table{_table-layout: fixed; border-collapse: collapse;}
+caption{text-indent: -999999px; display: none;}
+legend{text-indent: -999999px; display: none;}

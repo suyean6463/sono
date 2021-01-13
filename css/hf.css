@@ -1,0 +1,72 @@
+/*font-family: 'EB Garamond', serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Noto Serif KR', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;*/
+
+/*header*/
+#header{background-color:rgba(0,0,0,0); width: 100%; height: 100px; position: fixed; top: 0; left: 0; z-index: 100;}
+#header.on{background-color:rgba(70,65,59,0.8); height: 70px; }
+.logo{ width: 130px; position: fixed; top: 22px; left: 50%; margin-left: -60px; z-index: 100;}
+.logo.on{width: 100px; top:15px; margin-left: -50px;}
+.hnb{position: fixed; top: 27px; right: 30px; z-index: 100;}
+.hnb li{float: left; font-size: 12px; margin-left: 15px; letter-spacing: 1px; font-weight: 100; font-family: 'Nanum Gothic', sans-serif;}
+.hnb li:last-child{border-bottom: 1px solid #eee;}
+.hnb li a{color: white;}
+#header>p{
+	font-family: 'Montserrat', sans-serif; border: 1px solid white;
+	position: absolute; top: 18px; right: 30px; padding: 5px 10px 7px 10px; 
+}
+#header>p>a{color: white; font-size: 10px; letter-spacing: 2px;}
+
+/*nav*/
+.nav{position: fixed; top: 350px; left: 30px; font-family: 'Montserrat', sans-serif; z-index: 90;}
+.nav li{padding: 8px 0 8px 10px;  font-size: 12px;}
+.nav li a{color: #686058; padding-bottom: 2px;}
+.nav li a.change{color: #333;}
+.nav li a:hover{color: #ccc;}
+.nav li a.active{color: #ccc; border-bottom: 1px solid #ccc;}
+.nav li a.active1{color: black; border-bottom: 1px solid #333;}
+
+.btn-menu{position: fixed; left: 30px; top: 20px; transition: all 0.5s; z-index: 100;}
+.btn-menu.active{transform: rotate(45deg);}
+.hide{width: 100%; height: 510px; background-color: #686058; position: absolute; z-index: 95; padding: 0 10% 0 20%; border-bottom: 1px solid #a39986;display: none;}
+.hide .htitle{color: #a39986; font-family: 'Montserrat', sans-serif; font-size: 20px; padding-bottom: 5px; border-bottom: 1px solid #a39986;}
+.hide a{color: #eee; font-size: 14px;}
+.hide>li{float: left; padding-top: 120px; width: 25%; _text-align: center;}
+.hide>li:nth-child(5),.hide>li:nth-child(6),.hide>li:nth-child(7),.hide>li:nth-child(8){padding-top: 40px;}
+.hsub{margin-top: 20px;}
+.hsub li{margin: 5px 0;}
+.hsub li a:hover{color: #a39986; transition: all 0.5s;}
+
+/*footer*/
+#footer{width: 100%; height: 140px; background-color: #46413b; clear: both;}
+#fout{width: 1200px; margin: 0 auto;}
+.f_logo{width: 120px; margin-left: 50px; margin-top: 45px; float: left;}
+#fout p{font-family: 'Noto Sans KR', sans-serif; color: #a39986; font-size: 13px; letter-spacing: 1px; padding-top: 30px; margin-left: 50px; float: left;}
+#fout div{float: right; padding: 10px 15px; border: 1px solid #a39986; margin-right: 30px; margin-top: 33px;}
+#fout div a{color: #a39986; font-size: 14px;}
+
+/*반응형 : 태블릿*/
+@media all and (max-width:1300px){
+    .hnb{right: 10px;}
+    .hnb li{margin-left: 10px;}
+    .btn-menu{left: 10px;}
+    .hide{padding: 0;}
+    .hide>li{text-align: center;}
+    .logo{ width: 100px; top: 15px; margin-left: -50px;}
+    
+    .nav{top: 73px; left: 10px;}
+    .nav li{display: inline-block; font-size: 13px; float: left; margin-right: 10px;}
+}
+
+/*반응형 : 모바일*/
+@media all and (max-width : 780px){
+    .hnb{display: none;}
+    .nav{display: none;}
+    
+    .hide{width: 100%; height: 800px;}
+    .hide>li{width: 50%; height: 180px;}
+    .hide>li:nth-child(1),.hide>li:nth-child(2){height: 250px;}
+    .hide>li:nth-child(3),.hide>li:nth-child(4),.hide>li:nth-child(5),.hide>li:nth-child(6),.hide>li:nth-child(7),.hide>li:nth-child(8){padding-top: 50px;}
+}
